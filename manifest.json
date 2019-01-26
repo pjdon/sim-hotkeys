@@ -1,0 +1,41 @@
+{
+
+  "manifest_version": 2,
+  "name": "Simulate Hotkeys",
+  "version": "0.2",
+
+  "description": "Simulates hotkeys that would otherwise interrupt the page.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "permissions" : [
+    "activeTab",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/simkey.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "src/options.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "simhotkeys@rovyko"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "Simulate Hotkeys",
+    "default_popup": "src/popup.html"
+  }
+}

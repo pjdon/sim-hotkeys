@@ -1,0 +1,71 @@
+html {
+  /* disables the vertical scroll bar that flashes in when an accordion panel is expanded  */
+  overflow-y: hidden;
+
+}
+
+button {
+  background-color: #f9f9fa;
+  color: #0d0d0e;
+  border: 1px solid #d7d7db;
+  font-size: 15px;
+  padding: 6px 14px;
+  text-align: center;
+}
+button:hover {
+  background-color: #ebebeb;
+}
+button:active {
+  background-color: #dadada;
+}
+
+/* Toolbox and its buttons */
+.kvt-tools {
+  padding: 1em 0;
+}
+.kvt-tools > button {
+  margin-left: 0.5em;
+  float: right;
+}
+
+/* Key event box */
+.kvt-handle {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 4px 8px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+.kvt-handle:hover {
+  background-color: #dadada;
+}
+.kvt-handle:after {
+  content: '+';
+  font-size: medium;
+  float: right;
+  padding-right: 5px;
+}
+.kvt-handle-open:after {
+  content: '–';
+  padding-right: 6px;
+}
+
+.kvt-panel {
+  font-size: 15px;
+  line-height: 2em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.kvt-panel input[type='checkbox'] {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+.kvt-panel label {
+  margin-left: 5px;
+}
+.kvt-panel > button {
+  float: right;
+}

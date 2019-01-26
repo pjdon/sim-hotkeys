@@ -1,0 +1,23 @@
+#kvt-container {
+  padding: 5px;
+  display: grid;
+  grid-row-gap: 5px;
+  width: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  cursor: pointer; 
+  grid-row-gap: 0;
+}
+
+.kvt-button {
+  display: block;
+  padding: 8px;
+}
+
+.kvt-button:hover {
+  background-color: #e7e7e7;
+}
+
+.kvt-button:active {
+  background-color: lightsteelblue;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='common.css' />
+  <link rel='stylesheet' href='options.css' />
+</head>
+
+<template id='tmp-entry'>
+  <div class='kvt-entry'>
+    <button class='kvt-handle'>Untitled Key Event</button>
+    <div class='kvt-panel display-none'>
+      <span class='kvt-input-box'>
+          <label class='no-select'>Key: </label>
+          <input type='text' readonly placeholder="type here" class='kvt-input-field'>
+      </span>
+      <label class='no-select'>Ctrl: <input type='checkbox' name='ctrlKey'></label>
+      <label class='no-select'>Shift: <input type='checkbox'name='shiftKey'></label>
+      <label class='no-select'>Alt: <input type='checkbox' name='altKey'></label>
+      <label class='no-select'>Meta: <input type='checkbox' name='metaKey'></label>
+      <button class="kvt-delete">Delete</button>
+    </div>
+  </div>
+</template>
+
+<body>
+  <span class='kvt-tools'>
+    <button id='save-all'>Save All</button>
+    <button id='add-entry'>Add Entry</button>
+  </span>
+  <div id='kvt-list'></div>
+</body>
+
+<script src="tools.js"></script>
+<script src="options.js"></script>
+
+</html>
